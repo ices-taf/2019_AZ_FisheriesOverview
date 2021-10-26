@@ -1,6 +1,7 @@
 library(icesTAF)
 taf.library(icesFO)
 
-ecoregion <- icesFO::load_ecoregion("Azores")
+ices_ecoregion <- icesFO::load_ecoregion("Azores")
 
-sf::st_write(ecoregion, "ecoregion.csv", layer_options = "GEOMETRY=AS_WKT")
+sf::st_write(ices_ecoregion, "ices_ecoregion.csv", layer_options = "GEOMETRY=AS_WKT")
+

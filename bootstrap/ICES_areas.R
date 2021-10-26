@@ -1,6 +1,6 @@
 library(icesTAF)
 taf.library(icesFO)
 
-areas <- icesFO::load_areas("Bay of Biscay and the Iberian Coast")
+ices_areas <- load_areas("Azores")
 
-sf::st_write(areas, "areas.csv", layer_options = "GEOMETRY=AS_WKT")
+sf::st_write(areas, "ices_areas.csv", layer_options = "GEOMETRY=AS_WKT")
